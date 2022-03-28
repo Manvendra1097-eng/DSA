@@ -1,0 +1,37 @@
+package mathmatics.manvendra;
+
+public class PowerCalculation {
+
+	public static void main(String[] args) {
+		System.out.println(recurcive(3,5));
+		System.out.println(iterative(3,5));
+	}
+
+	// recursive method to find power
+	private static int recurcive(int i, int j) {
+       
+		if(j==0)
+			return 1;
+		if(i==0)
+			return 0;
+		int temp = recurcive(i,j/2);
+		if((j&1) == 0)
+			return temp*temp;
+		else
+			return temp*temp*i;	
+	}
+	
+	// iterative method to find power
+	private static int iterative(int a, int b) {
+		int res= 1;
+		while(b > 0) {
+			if(b%2 != 0)
+				res = res * a;
+			a = a*a;
+			b= b/2;
+		}
+		return res;
+	}
+
+	
+}

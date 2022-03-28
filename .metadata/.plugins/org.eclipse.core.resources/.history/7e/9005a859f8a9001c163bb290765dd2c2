@@ -1,0 +1,10 @@
+package bitMagic.manvendra;
+
+public class CheckIsPowerOfTwo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

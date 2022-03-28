@@ -1,0 +1,23 @@
+package mathmatics.manvendra;
+
+public class PowerCalculation {
+
+	public static void main(String[] args) {
+		System.out.println(recurcive(2,5));
+	}
+
+	private static int recurcive(int i, int j) {
+       
+		if(j==0)
+			return 1;
+		if(i==0)
+			return 0;
+		int temp = recurcive(i,j/2);
+		if((j&1) == 0)
+			return temp*temp;
+		else
+			return temp*temp*i;	
+	}
+
+	
+}

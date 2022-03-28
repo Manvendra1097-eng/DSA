@@ -1,0 +1,25 @@
+package manvendra.recursion;
+
+public class TailRecursion {
+
+	public static void main(String[] args) {
+        int num = 5;
+		
+		int ans1 = fact(num);
+		int ans2 = tailfact(num);
+		System.out.println(ans1);
+		System.out.println(ans2);
+	}
+
+	private static int tailfact(int num) {
+
+		if(num == 0 || num == 1)
+			return 1;
+	}
+
+	private static int fact(int num) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+package mathmatics.manvendra;
+
+public class AllDivisor {
+
+	public static void main(String[] args) {
+
+		method1(6);
+		
+	}
+	
+	//Naive solution
+	public static void method1(int num) {
+		for(int i=1 ;i <= num/2 ; i++) {
+			if(num%i==0)
+				System.out.print(i+" ");
+		}
+		System.out.print(num+" ");
+	}
+
+}

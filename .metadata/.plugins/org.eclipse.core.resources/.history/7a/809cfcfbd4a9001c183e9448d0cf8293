@@ -1,0 +1,9 @@
+package mathmatics.manvendra;
+
+public class PowerRecersive {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

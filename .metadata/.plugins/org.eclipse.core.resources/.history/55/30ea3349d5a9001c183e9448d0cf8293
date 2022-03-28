@@ -1,0 +1,9 @@
+package mathmatics.manvendra;
+
+public class PowerCalculation {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

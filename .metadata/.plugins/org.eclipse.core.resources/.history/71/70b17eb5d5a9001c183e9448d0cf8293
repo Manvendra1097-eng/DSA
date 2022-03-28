@@ -1,0 +1,19 @@
+package mathmatics.manvendra;
+
+public class PowerCalculation {
+
+	public static void main(String[] args) {
+		recurcive(2,5);
+	}
+
+	private static void recurcive(int i, int j) {
+       
+		if(j==0)
+			System.out.println(i);
+		if(i==0)
+			System.out.println(0);
+		
+	}
+
+	
+}

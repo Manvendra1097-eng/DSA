@@ -1,0 +1,19 @@
+package manvendra.recursion;
+
+public class PrintNto1 {
+
+	public static void main(String[] args) {
+  
+		print(5);
+	}
+
+	private static void print(int i) {
+  
+		if(i==1)
+			return;
+		
+		print(i-1);
+		System.out.println(i+" ");
+	}
+
+}

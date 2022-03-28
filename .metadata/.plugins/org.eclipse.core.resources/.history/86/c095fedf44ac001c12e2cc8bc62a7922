@@ -1,0 +1,29 @@
+package manvendra.recursion;
+
+public class RopeCuttingProblem {
+
+	public static void main(String[] args) {
+
+		int n = 5 , a = 2, b= 5, c = 1;
+		
+		int result = maxCut(5,2,5,1);
+	}
+
+	private static int maxCut(int n, int a, int b, int c) {
+		
+		if(n < 0)
+			return -1;
+		
+        int a1 = maxCut(n-a,a,b,c);
+        int b1 = maxCut(n-b,a,b,c);
+        int c1 = maxCut(n-c,a,b,c);
+        int tempMax = Math.max(a1, Math.max(b1,c1));
+        
+        if(tempMax == -1)
+        	return -1 ;
+        else
+        	return tempMax+1;
+
+	}
+
+}
